@@ -1,6 +1,7 @@
 import './App.css';
 import KnowledgeContainer from "./Knowledge";
 import ProfilPic from "./tp-profil.svg";
+import * as SVGIcons from './SVGIcons';
 
 function App() {
   return (
@@ -43,9 +44,24 @@ function App() {
 
       </section>
 
-      <footer>
+    <footer>
         <p>&copy; 2023 Timo Petzold</p>
-      </footer>
+
+        <div className="social-media">
+            <div className="social-media-entry">
+                <a href="https://github.com/Slinch1" target="_blank" rel="noopener noreferrer" className="social-link">
+                    <SVGIcons.GitHubLogo />
+                    <span>GitHub</span>
+                </a>
+            </div>
+            <div className="social-media-entry">
+                <a href="https://www.linkedin.com/in/timo-petzold-65979829b" target="_blank" rel="noopener noreferrer" className="social-link">
+                    <SVGIcons.LinkedInLogo />
+                    <span>LinkedIn</span>
+                </a>
+            </div>
+        </div>
+    </footer>
     </div>
   );
 }

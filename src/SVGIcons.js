@@ -12,3 +12,6 @@ export const RailsLogo = () => <img src={require('./Logos/rails.svg').default} a
 export const CSharpLogo = () => <img src={require('./Logos/csharp.svg').default} alt="C# Logo" className="svg-icon"/>;
 export const UnityLogo = () => <img src={require('./Logos/unity.svg').default} alt="Unity Logo" className="svg-icon"/>;
 export const GitLogo = () => <img src={require('./Logos/git.svg').default} alt="Git Logo" className="svg-icon"/>;
+
+export const GitHubLogo = () => <img src={require('./Logos/github.svg').default} alt="GitHub Logo"/>;
+export const LinkedInLogo = () => <img src={require('./Logos/linkedin.svg').default} alt="LinkedIn Logo"/>;
