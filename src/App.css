@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Fira Code';
+  src: url('./fonts/FiraCode-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .App {
   text-align: center;
 }
@@ -5,8 +12,7 @@
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Fira Code', monospace;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -17,25 +23,25 @@ header {
   background-color: #333;
   color: #fff;
   text-align: center;
-  padding: 1em;
+  padding: 1rem;
 }
 
 section {
   flex: 1;
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 20px;
+  max-width: 50rem;
+  margin: 1.25rem auto;
+  padding: 1.25rem;
   background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
 }
 
-
 #about-me p {
-  font-size: 16px;
+  font-size: 1.3rem;
+  font-weight: 1500;
   line-height: 1.6;
 }
 
-#profile-picture > img{
+#profile-picture > img {
   height: 30rem;
   width: 30rem;
 }
@@ -47,7 +53,7 @@ section {
 }
 
 .portfolio-item {
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem; /* 20px in rem umgerechnet */
 }
 
 .portfolio-item h3 {
@@ -56,9 +62,10 @@ section {
 
 footer {
   text-align: center;
-  padding: 1em;
+  padding: 1rem;
   background-color: #333;
   color: #fff;
   margin-top: auto;
 }
+
 
