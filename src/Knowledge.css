@@ -1,0 +1,25 @@
+#knowledge-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.knowledge-row {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 1.25rem;
+}
+
+.knowledge-entry {
+    margin-right: 1.25rem;
+}
+
+.text {
+    color: #333;
+}
+
+.svg-icon {
+    width: 2rem;
+    height: 2rem;
+}
