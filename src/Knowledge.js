@@ -1,4 +1,3 @@
-import React from 'react';
 import './Knowledge.css';
 import * as SVGIcons from './SVGIcons';
 

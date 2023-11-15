@@ -1,5 +1,6 @@
 import './App.css';
 import KnowledgeContainer from "./Knowledge";
+import Projects from "./Projects";
 import ProfilPic from "./tp-profil.svg";
 import * as SVGIcons from './SVGIcons';
 
@@ -31,16 +32,7 @@ function App() {
 
       <section id="portfolio">
         <h2>Portfolio</h2>
-
-        <div className="portfolio-item">
-          <h3>Webentwicklungsprojekt</h3>
-          <p>Ein innovatives Webprojekt, bei dem ich für...</p>
-        </div>
-
-        <div className="portfolio-item">
-          <h3>Softwareentwicklung</h3>
-          <p>Entwicklung einer benutzerfreundlichen Software für...</p>
-        </div>
+        <Projects/>
 
       </section>
 
