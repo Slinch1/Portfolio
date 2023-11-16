@@ -41,9 +41,10 @@ header {
   line-height: 1.6;
 }
 
-#profile-picture > img {
-  height: 60%;
-  width: 60%;
+#profile-picture{
+  /*should be shown in the middle of the container*/
+    display: flex;
+    justify-content: center;
 }
 
 #knowledge-container-placement {
