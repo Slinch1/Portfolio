@@ -36,7 +36,7 @@ const ProjectEntry = ({projectName,categories, image, description, workedPositio
 
 const Projects = () => {
     const projects = [
-        /*{ projectName: "Wissenschaft und Wirtschaft", categories: ["Web-Tool", "Ruby on Rails", "Git"], workedPositions: ["Teamchef", "PM", "Programmierer"], description: ContentText.WWDescription() },*/
+        { projectName: "Wissenschaft und Wirtschaft", categories: ["Web-Tool", "Ruby on Rails", "Git"], workedPositions: ["Teamchef", "PM", "Programmierer"], description: ContentText.WWDescription() },
         { projectName: "Beta 2024", categories: ["Videospiel", "Unity", "C#", "Codecks", "Git"], image: SVGIcons.BetaLogo("Beta 2024"), workedPositions: ["Featureteam-Lead", "Programmierer"], description: ContentText.BetaDescription() },
         { projectName: "Hotline Mimic", categories: ["Videospiel", "Unity", "C#", "Git"], image: SVGIcons.GameProgLogo("Hotline Mimic"), workedPositions: ["Programmierer"], description: ContentText.HotlineDescription() },
         { projectName: "Warehouse Inc.", categories: ["Videospiel", "Unity", "C#", "Git"], image: SVGIcons.AlgoDatLogo("Warehouse Inc."), workedPositions: ["Programmierer"], description: ContentText.WarehouseDescription() },
