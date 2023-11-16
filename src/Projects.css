@@ -1,0 +1,87 @@
+.project-entry {
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+}
+
+.project-image{
+    height: 17.5%;
+    width: 20%;
+}
+
+.project-image-placeholder {
+    height: 17.5%;
+    width: 20%;
+    margin-bottom: 0.1rem;
+}
+
+.project-details{
+
+}
+
+.project-name > span{
+    font-size: 1.3rem;
+    font-weight: bolder;
+    color: crimson;
+}
+
+.project-categories{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.project-category{
+    background-color: #3498db;
+    padding: 0.5rem 1rem;
+    margin-right: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.project-category > span{
+    font-size: 0.9rem;
+    color: #fff;
+}
+
+.worked-positions{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.worked-position {
+    margin-right: 1rem;
+}
+
+.worked-position > span{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.description{
+    margin-top: 1rem;
+    padding: 0.5rem 2rem;
+}
+
+.description > span{
+    font-size: 1.1rem;
+    color: #333;
+}
+
+#projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+    gap: 2rem;
+    justify-content: center;
+}
+
+.odd-projects .project-entry:last-child {
+    grid-column: span 2;
+}
+
+.odd-projects .project-entry:last-child img {
+    height: 20%;
+    width: 10%;
+}

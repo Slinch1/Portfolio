@@ -26,7 +26,7 @@ header {
   padding: 1rem;
 }
 
-section {
+#about-me{
   flex: 1;
   max-width: 50rem;
   margin: 1.25rem auto;
@@ -42,14 +42,23 @@ section {
 }
 
 #profile-picture > img {
-  height: 30rem;
-  width: 30rem;
+  height: 60%;
+  width: 60%;
 }
 
 #knowledge-container-placement {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#portfolio{
+  flex: 1;
+  max-width: 70rem;
+  margin: 1.25rem auto;
+  padding: 1.25rem;
+  background-color: #fff;
+  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
 }
 
 .portfolio-item {
@@ -66,34 +75,6 @@ footer {
   background-color: #333;
   color: #fff;
   margin-top: auto;
-}
-
-.social-media {
-  margin-top: 1rem;
-  display: flex;
-  justify-content: center;
-}
-
-.social-media-entry {
-  margin-right: 2rem;
-}
-
-.social-link {
-  color: gray;
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-}
-
-.social-link span {
-  margin-left: 1rem;
-  color: white;
-}
-
-.social-link img {
-  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
-  width: 2rem;
-  height: 2rem;
 }
 
 

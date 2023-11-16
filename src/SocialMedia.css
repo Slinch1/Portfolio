@@ -1,0 +1,27 @@
+.social-media {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.social-media-entry {
+    margin-right: 2rem;
+}
+
+.social-link {
+    color: gray;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.social-link span {
+    margin-left: 1rem;
+    color: white;
+}
+
+.social-link img {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+    width: 2rem;
+    height: 2rem;
+}
