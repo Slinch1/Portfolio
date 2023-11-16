@@ -14,8 +14,11 @@ export const HotlineDescription = () => {
 }
 
 export const WarehouseDescription = () => {
-    return "Ein Lehrspiel, bei dem der Spieler das Thema Hashing näher gebracht werden soll. Es wurde im Rahmen des Moduls Algorithmen und Datenstrukturen umgesetzt." +
-        " Dabei schlüpft der Spieler in die Rolle eines Lagerarbeiters, der die Waren in das richtige Regal einräumen muss bzw. aus dem Regal zu Abgabestation bringen muss. " +
-        "Dabei werden die Regal-plätze in die Pakete eingeräumt bzw geholt werden müssen mittels verschiedener Hashing-Verfahren berechnet. " +
-        "Welches Verfahren und welche Rechnung angewendet wurde kann der Spieler mittels eines Pannels nachvollziehen.";
+    return "Gestaltet als Lehrspiel, hat dieses Projekt zum Ziel, dem Spieler das Konzept des Hashings näher zu bringen. " +
+        "Entwickelt wurde es im Rahmen des Algorithmen- und Datenstrukturen-Moduls. " +
+        "In diesem Spiel übernimmt der Spieler die Rolle eines Lagerarbeiters, der Waren entweder in das passende Regal einräumen oder sie von dort zur Abgabestation bringen muss.Die Herausforderung besteht darin, die Regalplätze mithilfe verschiedener Hashing-Verfahren zu berechnen. " +
+        "Der Spieler kann auf einem Panel verfolgen, welches Verfahren angewendet wurde und wie die Berechnungen erfolgten. " +
+        "So wird auf spielerische Weise ein tieferes Verständnis für Hashing-Verfahren im Kontext von Algorithmen und Datenstrukturen vermittelt."
+
+
 }
