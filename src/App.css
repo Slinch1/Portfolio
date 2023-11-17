@@ -61,6 +61,16 @@ header {
   box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
 }
 
+#portfolio-header{
+    padding-top: 2rem;
+}
+
+#portfolio-header > span{
+    font-size: 1.7rem;
+    font-weight: bold;
+    line-height: 1.6;
+}
+
 .portfolio-item {
   margin-bottom: 1.25rem; /* 20px in rem umgerechnet */
 }

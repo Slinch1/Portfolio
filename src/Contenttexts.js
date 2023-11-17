@@ -4,13 +4,13 @@ export const WWDescription = () => {
 }
 
 export const BetaDescription = () => {
-    return "70 Stundenten arbeiten zwei Semester lang in den Departments Gamgedesign, Art, Tech, Engine und Eventmanagement daran ein Spiel zu entwickeln." +
-        " Dabei wird das Spiel Echolight entstehen, ein 3D Roque Like Dungeon Crawler mit einer isometrischen Perspektive und einem ästhetischem Fokus auf Light and Dark";
+    return "70 Stundenten arbeiten zwei Semester lang in den Departments Gamedesign, Art, Tech, Engine und Eventmanagement daran ein Spiel zu entwickeln." +
+        " Dabei wird das Spiel Echolight entstehen, ein 3D Roque Like Dungeon Crawler mit einer isometrischen Perspektive und einem ästhetischem Fokus auf Licht und Dunkelheit."
 }
 
 export const HotlineDescription = () => {
-    return "Ein Spiel, welches die Hotline Miami Reihe parodiert. Es wurde im Rahmen des Moduls Games-Programming umgesetzt." +
-        " Dabei ist zu erwähnen das ich mich dabei nur auf die technische Umsetzung konzentriert habe.";
+    return "Ein Spiel, welches die Hotline Miami Reihe parodiert. Es wurde im Rahmen des Moduls Gameprogramming umgesetzt." +
+        " Dabei ist zu erwähnen das sich dabei nur auf die technische Umsetzung konzentriert wurde.";
 }
 
 export const WarehouseDescription = () => {
