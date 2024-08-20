@@ -1,10 +1,16 @@
 import './App.css';
 import KnowledgeContainer from "./Knowledge";
 import Projects from "./Projects";
-import SocialMedia from "./SocialMedia";
+import {useBirthdayCounter} from "./Utility";
 import ProfilPic from "./tp-profil.svg";
+import SocialMedia from "./SocialMedia";
+import React from "react";
+
+
 
 function App() {
+    const counter = useBirthdayCounter();
+    const currentYear = new Date().getFullYear();
   return (
     <div className="App">
       <header>
@@ -13,7 +19,7 @@ function App() {
 
       <div id="about-me">
         <h2>Über mich</h2>
-          <p>Ich bin Timo Petzold, 20 Jahre alt</p>
+          <p>Ich bin Timo Petzold, {counter}  Jahre alt</p>
           <div id="personal-info">
               <div id="profile-picture">
                   <img src={ProfilPic} alt="Profilbild" />
@@ -39,13 +45,17 @@ function App() {
       </div>
 
     <footer>
-        <p>&copy; 2023 Timo Petzold</p>
-        <SocialMedia/>
+        <p>&copy; {currentYear} Timo Petzold </p>
+        <SocialMedia />
     </footer>
     </div>
   );
 }
 
 export default App;
+
+
+
+
 
 
