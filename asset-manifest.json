@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.a1254dcc.css",
-    "main.js": "/Portfolio/static/js/main.fe9efe1c.js",
+    "main.js": "/Portfolio/static/js/main.c42dcd6e.js",
     "static/js/787.7da95b79.chunk.js": "/Portfolio/static/js/787.7da95b79.chunk.js",
     "static/media/tp-profil.svg": "/Portfolio/static/media/tp-profil.d8c584cf4eb159d423722af7741c3616.svg",
     "static/media/gameprog.svg": "/Portfolio/static/media/gameprog.96fc94885bb47e10022213a814f9ac35.svg",
@@ -14,8 +14,10 @@
     "static/media/itchio.svg": "/Portfolio/static/media/itchio.e06a0771d940eea6757d930aaa5cffe2.svg",
     "static/media/rails.svg": "/Portfolio/static/media/rails.05656c97e3e19a518d8d8543ab0b3896.svg",
     "static/media/csharp.svg": "/Portfolio/static/media/csharp.04d9d2bb18b9781567f7340691dcc686.svg",
+    "static/media/typescript.svg": "/Portfolio/static/media/typescript.9ad81d2e09b9cd2265cdb1e55d83a709.svg",
     "static/media/nextjs.svg": "/Portfolio/static/media/nextjs.1b2b52c044b9dcea988e68b966864c5a.svg",
     "static/media/github.svg": "/Portfolio/static/media/github.6fa18895f6e6c7772cab7049f7e05f59.svg",
+    "static/media/angular.svg": "/Portfolio/static/media/angular.1fd4bbed6c6768b2fc3d823e861ebd80.svg",
     "static/media/git.svg": "/Portfolio/static/media/git.c60b7e5ae8ec2562f23fdddcab300026.svg",
     "index.html": "/Portfolio/index.html",
     "static/media/unity.svg": "/Portfolio/static/media/unity.fe4a9b2be3dc578f2b917a06de9a40dd.svg",
@@ -24,11 +26,11 @@
     "static/media/html.svg": "/Portfolio/static/media/html.f318c8b1d5945fa9adc827ae94849cb1.svg",
     "static/media/javascript.svg": "/Portfolio/static/media/javascript.b879f838faf1cb951d1c2230fd933a39.svg",
     "main.a1254dcc.css.map": "/Portfolio/static/css/main.a1254dcc.css.map",
-    "main.fe9efe1c.js.map": "/Portfolio/static/js/main.fe9efe1c.js.map",
+    "main.c42dcd6e.js.map": "/Portfolio/static/js/main.c42dcd6e.js.map",
     "787.7da95b79.chunk.js.map": "/Portfolio/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a1254dcc.css",
-    "static/js/main.fe9efe1c.js"
+    "static/js/main.c42dcd6e.js"
   ]
 }
