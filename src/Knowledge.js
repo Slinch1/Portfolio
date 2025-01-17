@@ -13,21 +13,25 @@ const KnowledgeEntry = ({ logo, text }) => (
 const KnowledgeContainer = () => (
     <div id="knowledge-container">
         <div className="knowledge-row">
-        <KnowledgeEntry logo={<SVGIcons.HTMLLogo />} text="HTML"/>
-        <KnowledgeEntry logo={<SVGIcons.CSSLogo />} text="CSS"/>
-        <KnowledgeEntry logo={<SVGIcons.JavaScriptLogo />} text="JavaScript" />
-        <KnowledgeEntry logo={<SVGIcons.ReactLogo />} text="React" />
-        <KnowledgeEntry logo={<SVGIcons.NextJSLogo />} text="Next.JS"/>
-        <KnowledgeEntry logo={<SVGIcons.RubyLogo />} text="Ruby"/>
-        <KnowledgeEntry logo={<SVGIcons.RailsLogo />} text="Rails"/>
+                <KnowledgeEntry logo={<SVGIcons.HTMLLogo />} text="HTML"/>
+                <KnowledgeEntry logo={<SVGIcons.CSSLogo />} text="CSS"/>
+                <KnowledgeEntry logo={<SVGIcons.JavaScriptLogo />} text="JavaScript" />
+                <KnowledgeEntry logo={<SVGIcons.TypeSCriptLogo />} text="TypeScript"/>
+                <KnowledgeEntry logo={<SVGIcons.RubyLogo />} text="Ruby"/>
         </div>
         <div className="knowledge-row">
-        <KnowledgeEntry logo={<SVGIcons.UnityLogo />} text="Unity"/>
-        <KnowledgeEntry logo={<SVGIcons.CSharpLogo />} text="C#"/>
+                <KnowledgeEntry logo={<SVGIcons.ReactLogo />} text="React" />
+                <KnowledgeEntry logo={<SVGIcons.NextJSLogo />} text="Next.JS"/>
+                <KnowledgeEntry logo={<SVGIcons.AngularLogo />} text="Angular"/>
+                <KnowledgeEntry logo={<SVGIcons.RailsLogo />} text="Rails"/>
         </div>
         <div className="knowledge-row">
-        <KnowledgeEntry logo={<SVGIcons.JavaLogo />} text="Java"/>
-        <KnowledgeEntry logo={<SVGIcons.GitLogo />} text="Git"/>
+                <KnowledgeEntry logo={<SVGIcons.UnityLogo />} text="Unity"/>
+                <KnowledgeEntry logo={<SVGIcons.CSharpLogo />} text="C#"/>
+        </div>
+        <div className="knowledge-row">
+                <KnowledgeEntry logo={<SVGIcons.JavaLogo />} text="Java"/>
+                <KnowledgeEntry logo={<SVGIcons.GitLogo />} text="Git"/>
         </div>
     </div>
 );

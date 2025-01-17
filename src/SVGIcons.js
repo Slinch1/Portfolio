@@ -12,11 +12,12 @@ export const RailsLogo = () => <img src={require('./Logos/rails.svg').default} a
 export const CSharpLogo = () => <img src={require('./Logos/csharp.svg').default} alt="C# Logo" className="svg-icon"/>;
 export const UnityLogo = () => <img src={require('./Logos/unity.svg').default} alt="Unity Logo" className="svg-icon"/>;
 export const GitLogo = () => <img src={require('./Logos/git.svg').default} alt="Git Logo" className="svg-icon"/>;
+export const TypeSCriptLogo = () => <img src={require('./Logos/typescript.svg').default} alt="TypeScript Logo" className="svg-icon"/>;
+export const AngularLogo = () => <img src={require('./Logos/angular.svg').default} alt="Angular Logo" className="svg-icon"/>;
 
 export const BetaLogo = (projectName) => <img src={require('./Logos/beta.svg').default} alt={`${projectName} Preview`} className="project-image"/>;
 export const GameProgLogo = (projectName) => <img src={require('./Logos/gameprog.svg').default} alt={`${projectName} Preview`} className="project-image"/>;
 export const AlgoDatLogo = (projectName) => <img src={require('./Logos/algodat.svg').default} alt={`${projectName} Preview`} className="project-image"/>;
-
 export const GitHubLogo = () => <img src={require('./Logos/github.svg').default} alt="GitHub Logo"/>;
 export const LinkedInLogo = () => <img src={require('./Logos/linkedin.svg').default} alt="LinkedIn Logo"/>;
 
