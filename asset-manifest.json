@@ -1,23 +1,21 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.a1254dcc.css",
-    "main.js": "/Portfolio/static/js/main.c42dcd6e.js",
+    "main.js": "/Portfolio/static/js/main.a4a112c8.js",
     "static/js/787.7da95b79.chunk.js": "/Portfolio/static/js/787.7da95b79.chunk.js",
-    "static/media/tp-profil.svg": "/Portfolio/static/media/tp-profil.d8c584cf4eb159d423722af7741c3616.svg",
-    "static/media/gameprog.svg": "/Portfolio/static/media/gameprog.96fc94885bb47e10022213a814f9ac35.svg",
+    "static/media/tp-profil.svg": "/Portfolio/static/media/tp-profil.6436002807bbc4acfdf9c92365ea99f4.svg",
+    "static/media/gameprog.svg": "/Portfolio/static/media/gameprog.97c821b965b240764d3567628a19fc82.svg",
     "static/media/FiraCode-Regular.ttf": "/Portfolio/static/media/FiraCode-Regular.ea32261131becc79ea84.ttf",
-    "static/media/algodat.svg": "/Portfolio/static/media/algodat.226472151f1efc4c1ebf78d6fe42e991.svg",
-    "static/media/beta.svg": "/Portfolio/static/media/beta.69867b0e443aea0fcaafeb4874932381.svg",
+    "static/media/algodat.svg": "/Portfolio/static/media/algodat.d6710c282cfc58690be8be87f518c7f1.svg",
+    "static/media/beta.svg": "/Portfolio/static/media/beta.726b0639eac1a666c7b036ca0618e79c.svg",
     "static/media/ruby.svg": "/Portfolio/static/media/ruby.320ed4681bc48df897b0ed0ff4b00559.svg",
     "static/media/java.svg": "/Portfolio/static/media/java.68585ce8dadbd8ecebdc99a764c5c1cf.svg",
     "static/media/react.svg": "/Portfolio/static/media/react.e68b35f4774979ae220b1d5d7b345b00.svg",
     "static/media/itchio.svg": "/Portfolio/static/media/itchio.e06a0771d940eea6757d930aaa5cffe2.svg",
     "static/media/rails.svg": "/Portfolio/static/media/rails.05656c97e3e19a518d8d8543ab0b3896.svg",
     "static/media/csharp.svg": "/Portfolio/static/media/csharp.04d9d2bb18b9781567f7340691dcc686.svg",
-    "static/media/typescript.svg": "/Portfolio/static/media/typescript.9ad81d2e09b9cd2265cdb1e55d83a709.svg",
     "static/media/nextjs.svg": "/Portfolio/static/media/nextjs.1b2b52c044b9dcea988e68b966864c5a.svg",
     "static/media/github.svg": "/Portfolio/static/media/github.6fa18895f6e6c7772cab7049f7e05f59.svg",
-    "static/media/angular.svg": "/Portfolio/static/media/angular.1fd4bbed6c6768b2fc3d823e861ebd80.svg",
     "static/media/git.svg": "/Portfolio/static/media/git.c60b7e5ae8ec2562f23fdddcab300026.svg",
     "index.html": "/Portfolio/index.html",
     "static/media/unity.svg": "/Portfolio/static/media/unity.fe4a9b2be3dc578f2b917a06de9a40dd.svg",
@@ -26,11 +24,11 @@
     "static/media/html.svg": "/Portfolio/static/media/html.f318c8b1d5945fa9adc827ae94849cb1.svg",
     "static/media/javascript.svg": "/Portfolio/static/media/javascript.b879f838faf1cb951d1c2230fd933a39.svg",
     "main.a1254dcc.css.map": "/Portfolio/static/css/main.a1254dcc.css.map",
-    "main.c42dcd6e.js.map": "/Portfolio/static/js/main.c42dcd6e.js.map",
+    "main.a4a112c8.js.map": "/Portfolio/static/js/main.a4a112c8.js.map",
     "787.7da95b79.chunk.js.map": "/Portfolio/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a1254dcc.css",
-    "static/js/main.c42dcd6e.js"
+    "static/js/main.a4a112c8.js"
   ]
 }
