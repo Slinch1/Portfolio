@@ -1,25 +1,122 @@
-#knowledge-container {
+#knowledge-section {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+}
+
+.knowledge-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+    width: 80%;
+}
+
+.knowledge-container {
+    text-align: center;
+    background: #f8f8f8;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.knowledge-title {
+    min-height: 4rem; /* Festgelegte Mindesthöhe für alle Titel */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 0 1rem 0;
+    font-weight: bolder;
+    font-size: 1.5rem;
 }
 
 .knowledge-row {
     display: flex;
-    flex-wrap: nowrap;
-    margin-bottom: 1.25rem;
+    flex-direction: column;  /* Entries untereinander */
+    justify-content: flex-start; /* Die Entries oben ausrichten */
+    align-items: flex-start;
+    gap: 1.5rem;
 }
 
 .knowledge-entry {
-    margin-right: 1.25rem;
+    display: flex;
+    flex-direction: row; /* Setzt die Einträge nebeneinander */
+    align-items: center;
+    position: relative;
+    gap: 1.5rem; /* Abstand zwischen Icon und Skill-Leiste */
 }
 
-.text {
-    color: #333;
+.logo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .svg-icon {
-    width: 2rem;
-    height: 2rem;
+    height: 3rem;
+    width: 3rem;
+}
+
+.experience-bar {
+    position: relative;  /* Wichtig für die Positionierung der Labels */
+    width: 200px;  /* Festgelegte Breite für die Leiste */
+    height: 20px;  /* Erhöhte Höhe der Leiste */
+    background: #ddd;
+    border-radius: 10px;
+    margin-top: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+/* Die Erfahrung füllt die Leiste */
+.experience-fill {
+    height: 100%;
+    transition: width 0.3s ease-in-out; /* Sanfte Übergänge */
+}
+
+/* Positionierung der Labels direkt unterhalb der Erfahrung-Leiste */
+.left-label, .right-label {
+    position: absolute;
+    font-size: 0.75rem; /* Kleinere Schrift für die Labels */
+    font-weight: bold;
+    color: #333; /* Dunkle Farbe für gute Lesbarkeit */
+    top: 100%; /* Direkt unterhalb der Leiste */
+    width: 100%;
+    margin-top: 5px; /* Abstand zwischen der Leiste und den Labels */
+}
+
+.left-label {
+    position: absolute;
+    left: 0; /* Fixiert das Label am linken Rand der Erfahrung-Leiste */
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: #333;
+    top: 100%;  /* Direkt unter der Leiste */
+    transform: translateX(-10%); /* Verschiebt das Label etwas nach links */
+    margin-top: 5px;
+}
+
+/* Rechts vom Skillbar */
+.right-label {
+    right: 0;
+    padding-right: 5px;
+    text-align: right;  /* Das rechte Label rechts ausrichten */
+}
+
+.info-box {
+    position: absolute;
+    bottom: 120%;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    white-space: nowrap;
 }

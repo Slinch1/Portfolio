@@ -28,7 +28,7 @@ header {
 
 #about-me{
   flex: 1;
-  max-width: 50rem;
+  max-width: 60rem;
   margin: 1.25rem auto;
   padding: 1.25rem;
   background-color: #fff;
@@ -42,8 +42,8 @@ header {
 }
 
 #profile-picture > img {
-  height: 60%;
-  width: 60%;
+  height: 55%;
+  width: 55%;
 }
 
 #knowledge-container-placement {

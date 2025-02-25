@@ -2,7 +2,7 @@ import './App.css';
 import KnowledgeContainer from "./Knowledge";
 import Projects from "./Projects";
 import {useBirthdayCounter} from "./Utility";
-import ProfilPic from "./tp-profil.svg";
+import ProfilPic from "./profile/tp_2048.png";
 import SocialMedia from "./SocialMedia";
 import React from "react";
 
