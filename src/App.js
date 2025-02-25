@@ -36,12 +36,20 @@ function App() {
 
       </div>
 
-      <div id="portfolio">
-          <div id="portfolio-header">
-              <span>Portfolio</span>
-          </div>
+      <div id="projects">
+        <div id="projects-header">
+            <span>Studiums Projekte</span>
+        </div>
 
-        <Projects/>
+        <Projects type='study'/>
+      </div>
+
+      <div id="projects">
+        <div id="projects-header">
+            <span>Private Projekte</span>
+        </div>
+
+        <Projects type='private'/>
       </div>
 
     <footer>

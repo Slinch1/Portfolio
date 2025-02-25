@@ -18,7 +18,24 @@ export const WarehouseDescription = () => {
     return "Gestaltet als Lehrspiel, hat dieses Projekt zum Ziel, dem Spieler das Konzept des Hashings näher zu bringen. " +
         "Dabei lernt der Spieler verschiedene Hashing-Verfahren kennen und kann diese anwenden wenn er Waren in ein Regal einräumt oder aus einem Regal entnimmt. " +
         "Entwickelt wurde es im Rahmen des Algorithmen- und Datenstrukturen-Moduls über 1 Semester, mit einem Team aus 7 Personen bestehend aus Programmieren, Designern und 3D-Artists. "
+}
 
+export const PortfolioDescription = () => {
+    return "Dieses Projekt ist ein Portfolio, das mit React entwickelt wurde. " +
+        "Es präsentiert meine Fähigkeiten, Projekte und Erfahrungen in einer modernen und ansprechenden Benutzeroberfläche." +
+        "Dieses Projekt wird dabei mittels GitHub-Pages gehostet.";
+}
 
+export const PlanerDescription = () => {
+    return "Dieses Projekt ist eine Windows-App zur Terminplanung, die zu Übungszwecken entwickelt wurde. " +
+        "Die Benutzeroberfläche wurde mit Windows Forms gestaltet, während die Funktionalitäten in C# umgesetzt wurden. " +
+        "Die App bietet eine Monatsansicht zur Verwaltung von Terminen sowie eine Aufgabenliste für einen besseren Überblick über anstehende Aufgaben. " +
+        "Als Datenbasis dient eine MySQL-Datenbank, die auf einem externen Server gehostet wird.";
+}
 
+export const FeedMeDescription = () => {
+    return "Ein Spiel, welches im Rahmen eines Game Jams entwickelt wurde. " +
+        "Die Themenvorgabe war hierbei Evolution." +
+        "Der Fokus liegt dabei einen Damonen zu füttern, de einen verklavt hat. " +
+        "Dabei verändert dieser Dämon je mehr er wächst und beeinflusst dabei auch die Spielwelt.";
 }

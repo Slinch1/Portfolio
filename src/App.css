@@ -52,7 +52,7 @@ header {
   align-items: center;
 }
 
-#portfolio{
+#projects{
   flex: 1;
   max-width: 70rem;
   margin: 1.25rem auto;
@@ -61,23 +61,16 @@ header {
   box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
 }
 
-#portfolio-header{
+#projects-header{
     padding-top: 2rem;
 }
 
-#portfolio-header > span{
+#projects-header > span{
     font-size: 1.7rem;
     font-weight: bold;
     line-height: 1.6;
 }
 
-.portfolio-item {
-  margin-bottom: 1.25rem; /* 20px in rem umgerechnet */
-}
-
-.portfolio-item h3 {
-  color: #007bff;
-}
 
 footer {
   text-align: center;

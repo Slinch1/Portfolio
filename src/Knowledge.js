@@ -1,5 +1,5 @@
 import './Knowledge.css';
-import * as SVGIcons from './SVGIcons';
+import * as Icons from './Icons';
 import { useState } from 'react';
 
 const KnowledgeEntry = ({ logo, info, level }) => {
@@ -56,46 +56,46 @@ const KnowledgeSection = () => {
         {
             title: "Web-Entwicklung",
             entries: [
-                { logo: <SVGIcons.TypeSCriptLogo />, info: "TypeScript", level: 90 },
-                { logo: <SVGIcons.HTMLLogo />, info: "HTML", level: 80 },
-                { logo: <SVGIcons.CSSLogo />, info: "CSS", level: 80 },
-                { logo: <SVGIcons.JavaScriptLogo />, info: "JavaScript", level: 70 },
-                { logo: <SVGIcons.RubyLogo />, info: "Ruby", level: 10 },
+                { logo: <Icons.TypeSCriptLogo />, info: "TypeScript", level: 90 },
+                { logo: <Icons.HTMLLogo />, info: "HTML", level: 80 },
+                { logo: <Icons.CSSLogo />, info: "CSS", level: 80 },
+                { logo: <Icons.JavaScriptLogo />, info: "JavaScript", level: 70 },
+                { logo: <Icons.RubyLogo />, info: "Ruby", level: 30 },
             ]
         },
         {
             title: "Frameworks & Libraries",
             entries: [
-                { logo: <SVGIcons.AngularLogo />, info: "Angular", level: 80 },
-                { logo: <SVGIcons.ReactLogo />, info: "React", level: 60 },
-                { logo: <SVGIcons.TailwindLogo />, info: "Tailwind", level: 70 },
-                { logo: <SVGIcons.NextJSLogo />, info: "Next.js", level: 30 },
-                { logo: <SVGIcons.RailsLogo />, info: "Ruby on Rails", level: 10 },
+                { logo: <Icons.AngularLogo />, info: "Angular", level: 80 },
+                { logo: <Icons.ReactLogo />, info: "React", level: 60 },
+                { logo: <Icons.TailwindLogo />, info: "Tailwind", level: 70 },
+                { logo: <Icons.NextJSLogo />, info: "Next.js", level: 30 },
+                { logo: <Icons.RailsLogo />, info: "Ruby on Rails", level: 30 },
             ]
         },
         {
             title: "Spieleentwicklung",
             entries: [
-                { logo: <SVGIcons.UnityLogo />, info: "Unity", level: 80 },
-                { logo: <SVGIcons.CSharpLogo />, info: "C#", level: 80 },
-                { logo: <SVGIcons.GodotLogo />, info: "Godot", level: 30 },
+                { logo: <Icons.UnityLogo />, info: "Unity", level: 80 },
+                { logo: <Icons.CSharpLogo />, info: "C#", level: 80 },
+                { logo: <Icons.GodotLogo />, info: "Godot", level: 30 },
             ]
         },
         {
             title: "Datenbanken",
             entries: [
-                { logo: <SVGIcons.MongoDBLogo />, info: "MongoDB", level: 70 },
-                { logo: <SVGIcons.MySQLLogo />, info: "MySQL", level: 50 },
-                { logo: <SVGIcons.SQLiteLogo />, info: "SQLite", level: 50 },
+                { logo: <Icons.MongoDBLogo />, info: "MongoDB", level: 70 },
+                { logo: <Icons.MySQLLogo />, info: "MySQL", level: 50 },
+                { logo: <Icons.SQLiteLogo />, info: "SQLite", level: 50 },
             ]
         },
         {
             title: "Tools & Verschiedenes",
             entries: [
-                { logo: <SVGIcons.GitLogo />, info: "Git", level: 90 },
-                { logo: <SVGIcons.GitHubLogo />, info: "GitHub", level: 70 },
-                { logo: <SVGIcons.JavaLogo />, info: "Java", level: 50 },
-                { logo: <SVGIcons.PythonLogo />, info: "Python", level: 30 },
+                { logo: <Icons.GitLogo />, info: "Git", level: 90 },
+                { logo: <Icons.GitHubLogo />, info: "GitHub", level: 70 },
+                { logo: <Icons.JavaLogo />, info: "Java", level: 50 },
+                { logo: <Icons.PythonLogo />, info: "Python", level: 30 },
             ]
         }
     ];

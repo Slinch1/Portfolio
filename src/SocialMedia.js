@@ -1,5 +1,5 @@
 import './SocialMedia.css';
-import * as SVGIcons from './SVGIcons';
+import * as SVGIcons from './Icons';
 const SocialMediaEntry = ({ href, logo, text }) => (
     <div className="social-media-entry">
         <a href={href} target="_blank" rel="noopener noreferrer" className="social-link">
