@@ -3,11 +3,12 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin: 1rem 0;
 }
 
 .knowledge-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(2, 1fr); /* Immer genau 2 Spalten */
     gap: 2rem;
     justify-content: center;
     width: 80%;
@@ -33,6 +34,12 @@
     padding: 0 0 1rem 0;
     font-weight: bolder;
     font-size: 1.5rem;
+}
+
+.knowledge-container:only-child,
+.knowledge-container:nth-last-child(1):nth-child(odd) {
+    grid-column: span 2; /* Lässt den letzten Container sich über zwei Spalten erstrecken */
+    justify-self: center;
 }
 
 .knowledge-row {

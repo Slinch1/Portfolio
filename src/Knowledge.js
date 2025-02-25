@@ -5,10 +5,9 @@ import { useState } from 'react';
 const KnowledgeEntry = ({ logo, info, level }) => {
     const [hovered, setHovered] = useState(false);
 
-    // Berechnen der Farbe der Skill-Skala basierend auf dem Level
     const getSkillBarColor = (level) => {
-        const greenIntensity = Math.max(50, 255 - level * 2); // Dunkler werden bei höherem Level
-        return `rgb(0, ${greenIntensity}, 0)`;  // Dunkleres Grün
+        const greenIntensity = Math.max(50, 255 - level * 2);
+        return `rgb(0, ${greenIntensity}, 0)`;
     };
 
     return (
@@ -36,37 +35,41 @@ const KnowledgeEntry = ({ logo, info, level }) => {
     );
 };
 
+const KnowledgeContainer = ({ title, entries }) => {
+    // Sortiere die Einträge nach Level absteigend
+    const sortedEntries = [...entries].sort((a, b) => b.level - a.level);
 
-
-const KnowledgeContainer = ({ title, entries }) => (
-    <div className="knowledge-container">
-        <div className="knowledge-title">{title}</div>
-        <div className="knowledge-row">
-            {entries.map((entry, index) => (
-                <KnowledgeEntry key={index} {...entry} />
-            ))}
+    return (
+        <div className="knowledge-container">
+            <div className="knowledge-title">{title}</div>
+            <div className="knowledge-row">
+                {sortedEntries.map((entry, index) => (
+                    <KnowledgeEntry key={index} {...entry} />
+                ))}
+            </div>
         </div>
-    </div>
-);
+    );
+};
 
 const KnowledgeSection = () => {
     const knowledgeData = [
         {
             title: "Web-Entwicklung",
             entries: [
+                { logo: <SVGIcons.TypeSCriptLogo />, info: "TypeScript", level: 90 },
                 { logo: <SVGIcons.HTMLLogo />, info: "HTML", level: 80 },
                 { logo: <SVGIcons.CSSLogo />, info: "CSS", level: 80 },
                 { logo: <SVGIcons.JavaScriptLogo />, info: "JavaScript", level: 70 },
-                { logo: <SVGIcons.TypeSCriptLogo />, info: "TypeScript", level: 90 },
                 { logo: <SVGIcons.RubyLogo />, info: "Ruby", level: 10 },
             ]
         },
         {
             title: "Frameworks & Libraries",
             entries: [
-                { logo: <SVGIcons.ReactLogo />, info: "React", level: 60 },
-                { logo: <SVGIcons.NextJSLogo />, info: "Next.js", level: 30 },
                 { logo: <SVGIcons.AngularLogo />, info: "Angular", level: 80 },
+                { logo: <SVGIcons.ReactLogo />, info: "React", level: 60 },
+                { logo: <SVGIcons.TailwindLogo />, info: "Tailwind", level: 70 },
+                { logo: <SVGIcons.NextJSLogo />, info: "Next.js", level: 30 },
                 { logo: <SVGIcons.RailsLogo />, info: "Ruby on Rails", level: 10 },
             ]
         },
@@ -75,6 +78,15 @@ const KnowledgeSection = () => {
             entries: [
                 { logo: <SVGIcons.UnityLogo />, info: "Unity", level: 80 },
                 { logo: <SVGIcons.CSharpLogo />, info: "C#", level: 80 },
+                { logo: <SVGIcons.GodotLogo />, info: "Godot", level: 30 },
+            ]
+        },
+        {
+            title: "Datenbanken",
+            entries: [
+                { logo: <SVGIcons.MongoDBLogo />, info: "MongoDB", level: 70 },
+                { logo: <SVGIcons.MySQLLogo />, info: "MySQL", level: 50 },
+                { logo: <SVGIcons.SQLiteLogo />, info: "SQLite", level: 50 },
             ]
         },
         {
@@ -83,6 +95,7 @@ const KnowledgeSection = () => {
                 { logo: <SVGIcons.GitLogo />, info: "Git", level: 90 },
                 { logo: <SVGIcons.GitHubLogo />, info: "GitHub", level: 70 },
                 { logo: <SVGIcons.JavaLogo />, info: "Java", level: 50 },
+                { logo: <SVGIcons.PythonLogo />, info: "Python", level: 30 },
             ]
         }
     ];

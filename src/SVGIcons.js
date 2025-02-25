@@ -14,6 +14,12 @@ export const UnityLogo = () => <img src={require('./Logos/unity.svg').default} a
 export const GitLogo = () => <img src={require('./Logos/git.svg').default} alt="Git Logo" className="svg-icon"/>;
 export const TypeSCriptLogo = () => <img src={require('./Logos/typescript.svg').default} alt="TypeScript Logo" className="svg-icon"/>;
 export const AngularLogo = () => <img src={require('./Logos/angular.svg').default} alt="Angular Logo" className="svg-icon"/>;
+export const PythonLogo = () => <img src={require('./Logos/python.svg').default} alt="Python Logo" className="svg-icon"/>;
+export const MongoDBLogo = () => <img src={require('./Logos/mongodb.svg').default} alt="MongoDB Logo" className="svg-icon"/>;
+export const MySQLLogo = () => <img src={require('./Logos/mysql.svg').default} alt="MySQL Logo" className="svg-icon"/>;
+export const SQLiteLogo = () => <img src={require('./Logos/sqlite.svg').default} alt="SQLite Logo" className="svg-icon"/>;
+export const GodotLogo = () => <img src={require('./Logos/godot.svg').default} alt="Godot Logo" className="svg-icon"/>;
+export const TailwindLogo = () => <img src={require('./Logos/tailwind.svg').default} alt="Tailwind Logo" className="svg-icon"/>;
 
 export const BetaLogo = (projectName) => <img src={require('./Logos/beta.svg').default} alt={`${projectName} Preview`} className="project-image"/>;
 export const GameProgLogo = (projectName) => <img src={require('./Logos/gameprog.svg').default} alt={`${projectName} Preview`} className="project-image"/>;
