@@ -17,22 +17,170 @@ body {
   padding: 0;
   box-sizing: border-box;
   background-color: #f8f8f8;
+  transition: background-color 0.3s, color 0.3s;
 }
 
+/* Light Theme */
+body.light-mode {
+  background-color: #f8f8f8;
+  color: black;
+}
+
+/* Theme Dropdown Styling für Light Mode */
+body.light-mode .theme-dropdown {
+  background-color: white;
+  border-color: #ccc;
+}
+
+body.light-mode .theme-dropdown .theme-option {
+  color: black;
+}
+
+body.light-mode .theme-dropdown .theme-option:hover {
+  background-color: #ddd;
+}
+
+/* Dark Theme */
+body.dark-mode {
+  background-color: #333;
+  color: white;
+}
+
+body.dark-mode header {
+  background-color: #222;
+}
+
+body.dark-mode #about-me,
+body.dark-mode #projects {
+  background-color: #444;
+  color: white;
+}
+
+body.dark-mode footer {
+  background-color: #222;
+}
+
+/* Custom Theme */
+body.custom-mode {
+  background-color: #2e2e6f;
+  color: #ffd700;
+}
+
+body.custom-mode header {
+  background-color: #1b1b4d;
+}
+
+body.custom-mode #about-me,
+body.custom-mode #projects {
+  background-color: #3c3c8c;
+  color: #fffacd;
+}
+
+body.custom-mode footer {
+  background-color: #1b1b4d;
+}
+
+/* Header */
 header {
   background-color: #333;
   color: #fff;
   text-align: center;
   padding: 1rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#about-me{
+header h1 {
+  flex-grow: 1;
+  text-align: center;
+}
+
+/* Theme Button */
+#theme-toggle {
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  background-color: #444;
+  color: white;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-right: 1rem;
+}
+
+/* Theme Dropdown */
+.theme-selector {
+  position: absolute;
+  right: 1rem;
+}
+
+.theme-dropdown {
+  position: absolute;
+  right: 0;
+  top: 2.5rem;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  width: 150px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+}
+
+.theme-dropdown .theme-option {
+  padding: 0.75rem;
+  cursor: pointer;
+  text-align: left;
+  color: black;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1rem;
+}
+
+.theme-dropdown .theme-option:hover {
+  background-color: #ddd;
+}
+
+/* Anpassung des Dropdowns je nach Theme */
+body.dark-mode .theme-dropdown {
+  background-color: #222;
+  border-color: #555;
+}
+
+body.dark-mode .theme-option {
+  color: white;
+}
+
+body.dark-mode .theme-option:hover {
+  background-color: #444;
+}
+
+body.custom-mode .theme-dropdown {
+  background-color: #1b1b4d;
+  border-color: #ffd700;
+}
+
+body.custom-mode .theme-option {
+  color: #ffd700;
+}
+
+body.custom-mode .theme-option:hover {
+  background-color: #2e2e6f;
+}
+
+/* Sections */
+#about-me, #projects {
   flex: 1;
   max-width: 60rem;
   margin: 1.25rem auto;
   padding: 1.25rem;
   background-color: #fff;
   box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, color 0.3s;
 }
 
 #about-me p {
@@ -52,33 +200,27 @@ header {
   align-items: center;
 }
 
-#projects{
+#projects {
   flex: 1;
   max-width: 70rem;
-  margin: 1.25rem auto;
-  padding: 1.25rem;
-  background-color: #fff;
-  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
 }
 
-#projects-header{
-    padding-top: 2rem;
+#projects-header {
+  padding-top: 2rem;
 }
 
-#projects-header > span{
-    font-size: 1.7rem;
-    font-weight: bold;
-    line-height: 1.6;
+#projects-header > span {
+  font-size: 1.7rem;
+  font-weight: bold;
+  line-height: 1.6;
 }
 
-
+/* Footer */
 footer {
   text-align: center;
   padding: 1rem;
   background-color: #333;
   color: #fff;
   margin-top: auto;
+  transition: background-color 0.3s, color 0.3s;
 }
-
-
-

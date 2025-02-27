@@ -2,7 +2,7 @@ import './Knowledge.css';
 import * as Icons from './Icons';
 import { useState } from 'react';
 
-const KnowledgeEntry = ({ logo, info, level }) => {
+const KnowledgeEntry = ({ logo, info, level, theme }) => {
     const [hovered, setHovered] = useState(false);
 
     const getSkillBarColor = (level) => {
@@ -11,7 +11,7 @@ const KnowledgeEntry = ({ logo, info, level }) => {
     };
 
     return (
-        <div className="knowledge-entry">
+        <div className={`knowledge-entry ${theme}`}>
             <div 
                 className="logo" 
                 onMouseEnter={() => setHovered(true)} 
@@ -20,7 +20,7 @@ const KnowledgeEntry = ({ logo, info, level }) => {
                 <div className="icon-container">{logo}</div>
                 {hovered && <div className="info-box">{info}</div>}
             </div>
-            <div className="experience-bar">
+            <div className={`experience-bar ${theme}`}>
                 <div 
                     className="experience-fill" 
                     style={{ 
@@ -35,23 +35,21 @@ const KnowledgeEntry = ({ logo, info, level }) => {
     );
 };
 
-const KnowledgeContainer = ({ title, entries }) => {
-    // Sortiere die Einträge nach Level absteigend
+const KnowledgeContainer = ({ title, entries, theme }) => {
     const sortedEntries = [...entries].sort((a, b) => b.level - a.level);
 
     return (
-        <div className="knowledge-container">
+        <div className={`knowledge-container ${theme}`}>
             <div className="knowledge-title">{title}</div>
             <div className="knowledge-row">
                 {sortedEntries.map((entry, index) => (
-                    <KnowledgeEntry key={index} {...entry} />
+                    <KnowledgeEntry key={index} {...entry} theme={theme} />
                 ))}
             </div>
         </div>
     );
 };
-
-const KnowledgeSection = () => {
+const KnowledgeSection = ({ theme }) => {
     const knowledgeData = [
         {
             title: "Web-Entwicklung",
@@ -93,7 +91,7 @@ const KnowledgeSection = () => {
             title: "Tools & Verschiedenes",
             entries: [
                 { logo: <Icons.GitLogo />, info: "Git", level: 90 },
-                { logo: <Icons.GitHubLogo />, info: "GitHub", level: 70 },
+                { logo: <Icons.GitHubLogo theme={theme} />, info: "GitHub", level: 70 },
                 { logo: <Icons.JavaLogo />, info: "Java", level: 50 },
                 { logo: <Icons.PythonLogo />, info: "Python", level: 30 },
             ]
@@ -101,10 +99,10 @@ const KnowledgeSection = () => {
     ];
 
     return (
-        <div id="knowledge-section">
+        <div id="knowledge-section" className={theme}> {/* Hier wird das Theme angewendet */}
             <div className="knowledge-grid">
                 {knowledgeData.map((container, index) => (
-                    <KnowledgeContainer key={index} {...container} />
+                    <KnowledgeContainer key={index} {...container} theme={theme} />
                 ))}
             </div>
         </div>

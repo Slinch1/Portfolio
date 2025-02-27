@@ -74,7 +74,6 @@
     position: relative;  /* Wichtig für die Positionierung der Labels */
     width: 200px;  /* Festgelegte Breite für die Leiste */
     height: 20px;  /* Erhöhte Höhe der Leiste */
-    background: #ddd;
     border-radius: 10px;
     margin-top: 0;
     overflow: hidden;
@@ -93,7 +92,6 @@
     position: absolute;
     font-size: 0.75rem; /* Kleinere Schrift für die Labels */
     font-weight: bold;
-    color: #333; /* Dunkle Farbe für gute Lesbarkeit */
     top: 100%; /* Direkt unterhalb der Leiste */
     width: 100%;
     margin-top: 5px; /* Abstand zwischen der Leiste und den Labels */
@@ -104,7 +102,6 @@
     left: 0; /* Fixiert das Label am linken Rand der Erfahrung-Leiste */
     font-size: 0.75rem;
     font-weight: bold;
-    color: #333;
     top: 100%;  /* Direkt unter der Leiste */
     transform: translateX(-10%); /* Verschiebt das Label etwas nach links */
     margin-top: 5px;
@@ -126,4 +123,109 @@
     border-radius: 5px;
     font-size: 0.8rem;
     white-space: nowrap;
+}
+
+/* Default Styles für Light Theme */
+.knowledge-entry.light {
+    background-color: #f8f8f8;
+    color: black;
+}
+
+.knowledge-entry.dark {
+    background-color: #312c2c;
+    color: white;
+}
+
+.knowledge-entry.custom {
+    background-color: #2e2e6f;
+    color: #ffd700;
+}
+
+/* Container Styles */
+.knowledge-container.light {
+    background-color: #f8f8f8;
+    color: black;
+}
+
+.knowledge-container.dark {
+    background-color: #312c2c;
+    color: white;
+}
+
+.knowledge-container.custom {
+    background-color: #3c3c8c;
+    color: #fffacd;
+}
+
+/* Titel Styles */
+.knowledge-title.light {
+    color: black;
+}
+
+.knowledge-title.dark {
+    color: white;
+}
+
+.knowledge-title.custom {
+    color: #ffd700;
+}
+
+/* Zeilen-Styles */
+.knowledge-row.light {
+    background-color: #fff;
+}
+
+.knowledge-row.dark {
+    background-color: #333;
+}
+
+.knowledge-row.custom {
+    background-color: #3c3c8c;
+}
+
+.experience-bar.light {
+    background: #ddd;
+}
+
+.experience-bar.dark {
+    background: #555;
+}
+
+.experience-bar.custom {
+    background: #2e2e6f;
+}
+
+/* Labels unter der Erfahrung-Leiste */
+.left-label.light, .right-label.light {
+    color: #333;
+}
+
+.left-label.dark, .right-label.dark {
+    color: #eaeaea;
+}
+
+.left-label.custom, .right-label.custom {
+    color: #ffd700;
+}
+
+/* Info-Box bei Hover */
+.info-box.light {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+.info-box.dark {
+    background: rgba(255, 255, 255, 0.9);
+    color: black;
+}
+
+.info-box.custom {
+    background: rgba(46, 46, 111, 0.9);
+    color: #ffd700;
+}
+
+
+/* Optional: Hover-Styles für die Info-Box */
+.knowledge-entry:hover .info-box {
+    visibility: visible;
 }
