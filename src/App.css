@@ -1,12 +1,11 @@
+/* ------------------------- */
+/*       Fonts & Basics      */
+/* ------------------------- */
 @font-face {
   font-family: 'Fira Code';
   src: url('./fonts/FiraCode-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-}
-
-.App {
-  text-align: center;
 }
 
 body {
@@ -20,13 +19,19 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 
+.App {
+  text-align: center;
+}
+
+/* ------------------------- */
+/*         Themes            */
+/* ------------------------- */
 /* Light Theme */
 body.light-mode {
   background-color: #f8f8f8;
   color: black;
 }
 
-/* Theme Dropdown Styling für Light Mode */
 body.light-mode .theme-dropdown {
   background-color: white;
   border-color: #ccc;
@@ -80,21 +85,24 @@ body.custom-mode footer {
   background-color: #1b1b4d;
 }
 
-/* Header */
+/* ------------------------- */
+/*        Header             */
+/* ------------------------- */
 header {
   background-color: #333;
   color: #fff;
-  text-align: center;
   padding: 1rem;
   position: relative;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 header h1 {
   flex-grow: 1;
   text-align: center;
+  margin: 0;
+  font-size: 1.8rem;
 }
 
 /* Theme Button */
@@ -109,10 +117,12 @@ header h1 {
   margin-right: 1rem;
 }
 
-/* Theme Dropdown */
+/* Theme Selector */
 .theme-selector {
   position: absolute;
   right: 1rem;
+  display: flex;
+  align-items: center;
 }
 
 .theme-dropdown {
@@ -145,7 +155,7 @@ header h1 {
   background-color: #ddd;
 }
 
-/* Anpassung des Dropdowns je nach Theme */
+/* Dark Mode Anpassungen */
 body.dark-mode .theme-dropdown {
   background-color: #222;
   border-color: #555;
@@ -159,6 +169,7 @@ body.dark-mode .theme-option:hover {
   background-color: #444;
 }
 
+/* Custom Mode Anpassungen */
 body.custom-mode .theme-dropdown {
   background-color: #1b1b4d;
   border-color: #ffd700;
@@ -172,7 +183,9 @@ body.custom-mode .theme-option:hover {
   background-color: #2e2e6f;
 }
 
-/* Sections */
+/* ------------------------- */
+/*        Sections           */
+/* ------------------------- */
 #about-me, #projects {
   flex: 1;
   max-width: 60rem;
@@ -215,7 +228,9 @@ body.custom-mode .theme-option:hover {
   line-height: 1.6;
 }
 
-/* Footer */
+/* ------------------------- */
+/*         Footer            */
+/* ------------------------- */
 footer {
   text-align: center;
   padding: 1rem;
@@ -223,4 +238,31 @@ footer {
   color: #fff;
   margin-top: auto;
   transition: background-color 0.3s, color 0.3s;
+}
+
+/* ------------------------- */
+/*     Responsive Design     */
+/* ------------------------- */
+@media (max-width: 900px) {
+  header {
+    justify-content: space-between;
+    padding: 0.8rem 1rem;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+    text-align: left;
+    flex-grow: unset;
+  }
+
+  .theme-selector {
+    position: relative;
+    right: 0;
+  }
+
+  .theme-dropdown {
+    right: 0;
+    top: 2.5rem;
+    width: 140px;
+  }
 }

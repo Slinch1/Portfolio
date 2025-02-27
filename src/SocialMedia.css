@@ -25,3 +25,28 @@
     width: 2rem;
     height: 2rem;
 }
+
+/* Mobile Anpassungen */
+@media (max-width: 900px) {
+    /* Container umstellen für mobile Ansicht: Einspaltig statt nebeneinander */
+    .social-media {
+        flex-direction: row; /* Einträge untereinander anzeigen */
+        align-items: center; /* Zentriert die Einträge */
+        gap: 1.5rem;
+    }
+
+    .social-media-entry {
+        margin-right: 0; /* Abstand nach rechts entfernen */
+        margin-bottom: 1rem; /* Abstand nach unten hinzufügen für bessere Trennung */
+    }
+
+    .social-link span {
+        margin-left: 0.5rem; /* Weniger Abstand zwischen Logo und Text */
+        font-size: 0.9rem; /* Kleinere Schriftgröße für mobile Ansicht */
+    }
+
+    .social-link img {
+        width: 2.5rem; /* Etwas größere Icons für die mobile Ansicht */
+        height: 2.5rem;
+    }
+}

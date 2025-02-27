@@ -1,3 +1,7 @@
+/* ------------------------- */
+/*       Layout & Grid       */
+/* ------------------------- */
+
 #knowledge-section {
     display: flex;
     justify-content: center;
@@ -8,7 +12,7 @@
 
 .knowledge-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Immer genau 2 Spalten */
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     justify-content: center;
     width: 80%;
@@ -26,7 +30,7 @@
 }
 
 .knowledge-title {
-    min-height: 4rem; /* Festgelegte Mindesthöhe für alle Titel */
+    min-height: 4rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -38,24 +42,24 @@
 
 .knowledge-container:only-child,
 .knowledge-container:nth-last-child(1):nth-child(odd) {
-    grid-column: span 2; /* Lässt den letzten Container sich über zwei Spalten erstrecken */
+    grid-column: span 2;
     justify-self: center;
 }
 
 .knowledge-row {
     display: flex;
-    flex-direction: column;  /* Entries untereinander */
-    justify-content: flex-start; /* Die Entries oben ausrichten */
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: flex-start;
     gap: 1.5rem;
 }
 
 .knowledge-entry {
     display: flex;
-    flex-direction: row; /* Setzt die Einträge nebeneinander */
+    flex-direction: row;
     align-items: center;
     position: relative;
-    gap: 1.5rem; /* Abstand zwischen Icon und Skill-Leiste */
+    gap: 1.5rem;
 }
 
 .logo {
@@ -70,14 +74,18 @@
     width: 3rem;
 }
 
-.filter-dark{
+.filter-dark {
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
 }
 
+/* ------------------------- */
+/*       Experience Bar      */
+/* ------------------------- */
+
 .experience-bar {
-    position: relative;  /* Wichtig für die Positionierung der Labels */
-    width: 200px;  /* Festgelegte Breite für die Leiste */
-    height: 20px;  /* Erhöhte Höhe der Leiste */
+    position: relative;
+    width: 200px;
+    height: 20px;
     border-radius: 10px;
     margin-top: 0;
     overflow: hidden;
@@ -85,37 +93,33 @@
     align-items: center;
 }
 
-/* Die Erfahrung füllt die Leiste */
 .experience-fill {
     height: 100%;
-    transition: width 0.3s ease-in-out; /* Sanfte Übergänge */
 }
 
-/* Positionierung der Labels direkt unterhalb der Erfahrung-Leiste */
 .left-label, .right-label {
     position: absolute;
-    font-size: 0.75rem; /* Kleinere Schrift für die Labels */
+    font-size: 0.75rem;
     font-weight: bold;
-    top: 100%; /* Direkt unterhalb der Leiste */
+    top: 100%;
     width: 100%;
-    margin-top: 5px; /* Abstand zwischen der Leiste und den Labels */
+    margin-top: 5px; 
 }
 
 .left-label {
     position: absolute;
-    left: 0; /* Fixiert das Label am linken Rand der Erfahrung-Leiste */
+    left: 0;
     font-size: 0.75rem;
     font-weight: bold;
-    top: 100%;  /* Direkt unter der Leiste */
-    transform: translateX(-10%); /* Verschiebt das Label etwas nach links */
+    top: 100%;
+    transform: translateX(-10%);
     margin-top: 5px;
 }
 
-/* Rechts vom Skillbar */
 .right-label {
     right: 0;
     padding-right: 5px;
-    text-align: right;  /* Das rechte Label rechts ausrichten */
+    text-align: right;
 }
 
 .info-box {
@@ -128,6 +132,10 @@
     font-size: 0.8rem;
     white-space: nowrap;
 }
+
+/* ------------------------- */
+/*       Theme Styles        */
+/* ------------------------- */
 
 /* Default Styles für Light Theme */
 .knowledge-entry.light {
@@ -229,7 +237,65 @@
 }
 
 
+/* ------------------------- */
+/*       Interaction Styles  */
+/* ------------------------- */
+
 /* Optional: Hover-Styles für die Info-Box */
 .knowledge-entry:hover .info-box {
     visibility: visible;
+}
+
+/* ------------------------- */
+/*       Mobile Anpassungen   */
+/* ------------------------- */
+
+@media (max-width: 900px) {
+    .knowledge-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .knowledge-container {
+        width: 100%;
+        max-width: 400px;
+        margin: 0;
+        padding: 1.2rem;
+    }
+
+    .knowledge-title {
+        font-size: 1.2rem;
+    }
+
+    .knowledge-entry {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 0.5rem;
+    }
+
+    .logo .svg-icon {
+        height: 2.2rem;
+        width: 2.2rem;
+    }
+
+    .experience-bar {
+        width: 120px;
+        height: 12px;
+    }
+
+    .left-label, .right-label {
+        font-size: 0.6rem;
+        margin-top: 2px;
+    }
+
+    .left-label {
+        transform: translateX(-50%);
+    }
+
+    .right-label {
+        transform: translateX(20%);
+    }
 }
