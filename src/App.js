@@ -64,14 +64,14 @@ function App() {
                 <div id="projects-header">
                     <span>Studiums Projekte</span>
                 </div>
-                <Projects type='study' />
+                <Projects type='study' theme={theme} />
             </div>
 
             <div id="projects">
                 <div id="projects-header">
                     <span>Private Projekte</span>
                 </div>
-                <Projects type='private' />
+                <Projects type='private' theme={theme} />
             </div>
 
             <footer>

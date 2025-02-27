@@ -2,14 +2,14 @@ import './Projects.css';
 import * as ContentText from './Contenttexts.js'
 import * as Icons from './Icons.js';
 
-const studyProjects = [
+const studyProjects = () => [
     { projectName: "Wissenschaft und Wirtschaft", categories: ["Web-Tool", "Ruby on Rails", "Git"], workedPositions: ["Teamchef", "PM", "Programmierer"], description: ContentText.WWDescription() },
     { projectName: "Beta 2024", categories: ["Videospiel", "Unity", "C#", "Codecks", "Git"], image: Icons.BetaLogo("Beta 2024"), workedPositions: ["Featureteam-Lead", "Programmierer"], description: ContentText.BetaDescription() },
     { projectName: "Hotline Mimic", categories: ["Videospiel", "Unity", "C#", "Git"], image: Icons.GameProgLogo("Hotline Mimic"), workedPositions: ["Programmierer"], description: ContentText.HotlineDescription() },
     { projectName: "Warehouse Inc.", categories: ["Videospiel", "Unity", "C#", "Git"], image: Icons.AlgoDatLogo("Warehouse Inc."), workedPositions: ["Programmierer"], description: ContentText.WarehouseDescription() },
 ];
 
-const privateProjects = [
+const privateProjects = () => [
     { projectName: "Portfolio", categories: ["Website", "React", "JavaScript", "CSS", "Git", "GitHub"], workedPositions: ["Programmierer", "Designer"], description: ContentText.PortfolioDescription() },
     { projectName: "Termin Planer", categories: ["Windows Forms App", "C#", "Git", "MySQL"], image: Icons.PlanerLogo(), workedPositions: ["Programmierer"], description: ContentText.PlanerDescription() },
     { projectName: "Feed Me", categories: ["Videospiel", "Unity", "C#", "Git"], image: Icons.FeedMeLogo(), workedPositions: ["Programmierer"], description: ContentText.FeedMeDescription() }
@@ -35,12 +35,12 @@ const ProjectEntry = ({ projectName, categories, image, description, workedPosit
     </div>
 );
 
-const Projects = ({ type = "study" }) => {
-    const projects = type === "private" ? privateProjects : studyProjects;
+const Projects = ({ type = "study", theme }) => {
+    const projects = type === "private" ? privateProjects(theme) : studyProjects(theme);
     const isOdd = projects.length % 2 !== 0;
 
     return (
-        <div id="projects-container" className={isOdd ? 'odd-projects' : ''}>
+        <div id="projects-container" className={`theme-${theme} ${isOdd ? 'odd-projects' : ''}`}>
             {projects.map((project, index) => (
                 <ProjectEntry
                     key={index}
