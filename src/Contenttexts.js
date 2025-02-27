@@ -22,7 +22,7 @@ export const WarehouseDescription = () => {
 
 export const PortfolioDescription = () => {
     return "Dieses Projekt ist ein Portfolio, das mit React entwickelt wurde. " +
-        "Es präsentiert meine Fähigkeiten, Projekte und Erfahrungen in einer modernen und ansprechenden Benutzeroberfläche." +
+        "Es präsentiert meine Fähigkeiten, Projekte und Erfahrungen in einer modernen und ansprechenden Benutzeroberfläche. " +
         "Dieses Projekt wird dabei mittels GitHub-Pages gehostet.";
 }
 
@@ -35,7 +35,7 @@ export const PlanerDescription = () => {
 
 export const FeedMeDescription = () => {
     return "Ein Spiel, welches im Rahmen eines Game Jams entwickelt wurde. " +
-        "Die Themenvorgabe war hierbei Evolution." +
+        "Die Themenvorgabe war hierbei Evolution. " +
         "Der Fokus liegt dabei einen Damonen zu füttern, de einen verklavt hat. " +
         "Dabei verändert dieser Dämon je mehr er wächst und beeinflusst dabei auch die Spielwelt.";
 }
