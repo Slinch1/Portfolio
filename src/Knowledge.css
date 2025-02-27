@@ -70,6 +70,10 @@
     width: 3rem;
 }
 
+.filter-dark{
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+}
+
 .experience-bar {
     position: relative;  /* Wichtig für die Positionierung der Labels */
     width: 200px;  /* Festgelegte Breite für die Leiste */

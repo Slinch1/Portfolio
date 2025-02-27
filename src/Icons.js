@@ -28,14 +28,8 @@ export const AlgoDatLogo = (projectName) => <img src={require('./Logos/algodat.s
 export const PlanerLogo = () => <img src={require('./Logos/planer.png')} alt="Planer Logo" className="project-image"/>;
 export const FeedMeLogo = () => <img src={require('./Logos/feedme.png')} alt="Feed Me Logo" className="project-image"/>;
 
-const githubLogos = {
-    light: require("./Logos/github_light.svg").default,
-    dark: require("./Logos/github_dark.svg").default
-};
-
 export const GitHubLogo = ({ theme }) => (
-    <img src={githubLogos[theme] || githubLogos.light} alt="GitHub Logo" className="svg-icon"/>
+    <img src={require('./Logos/github.svg').default} alt="GitHub Logo" className={`svg-icon filter-${theme}`}/>
 );
-
 export const LinkedInLogo = () => <img src={require('./Logos/linkedin.svg').default} alt="LinkedIn Logo"/>;
 export const IntchioLogo = () => <img src={require('./Logos/itchio.svg').default} alt="Intchio Logo"/>;
