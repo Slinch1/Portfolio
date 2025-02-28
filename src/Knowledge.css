@@ -101,7 +101,7 @@
     position: absolute;
     font-size: 0.75rem;
     font-weight: bold;
-    top: 100%;
+    bottom: 80%;
     width: 100%;
     margin-top: 5px; 
 }
@@ -111,7 +111,6 @@
     left: 0;
     font-size: 0.75rem;
     font-weight: bold;
-    top: 100%;
     transform: translateX(-10%);
     margin-top: 5px;
 }
@@ -289,6 +288,7 @@
     .left-label, .right-label {
         font-size: 0.6rem;
         margin-top: 2px;
+        bottom: 25%;
     }
 
     .left-label {
