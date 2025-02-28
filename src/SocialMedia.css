@@ -20,33 +20,43 @@
     color: white;
 }
 
-.social-link img {
+.social-link-svg {
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
-    width: 2rem;
-    height: 2rem;
+    width: 2rem !important;
+    height: 2rem !important;
+}
+
+.special-linkedin-icon {
+    fill: white !important;
+    width: 2rem !important;
+    height: 2rem !important;
 }
 
 /* Mobile Anpassungen */
 @media (max-width: 900px) {
-    /* Container umstellen für mobile Ansicht: Einspaltig statt nebeneinander */
     .social-media {
-        flex-direction: row; /* Einträge untereinander anzeigen */
-        align-items: center; /* Zentriert die Einträge */
+        flex-direction: row;
+        align-items: center;
         gap: 1.5rem;
     }
 
     .social-media-entry {
-        margin-right: 0; /* Abstand nach rechts entfernen */
-        margin-bottom: 1rem; /* Abstand nach unten hinzufügen für bessere Trennung */
+        margin-right: 0;
+        margin-bottom: 1rem;
     }
 
     .social-link span {
-        margin-left: 0.5rem; /* Weniger Abstand zwischen Logo und Text */
-        font-size: 0.9rem; /* Kleinere Schriftgröße für mobile Ansicht */
+        margin-left: 0.5rem;
+        font-size: 0.9rem;
     }
 
-    .social-link img {
-        width: 2.5rem; /* Etwas größere Icons für die mobile Ansicht */
-        height: 2.5rem;
+    .social-link-svg {
+        width: 2.5rem !important;
+        height: 2.5rem !important;
+    }
+
+    .special-linkedin-icon {
+        width: 2.5rem !important;
+        height: 2.5rem !important;
     }
 }
