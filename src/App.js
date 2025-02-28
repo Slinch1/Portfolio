@@ -83,7 +83,7 @@ function App() {
 
             <div id="projects">
                 <div id="projects-header">
-                    <span>Studiums Projekte</span>
+                    <span>Studiums-Projekte</span>
                 </div>
                 <Projects type='study' theme={theme} />
             </div>
