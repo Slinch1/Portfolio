@@ -72,7 +72,11 @@ function App() {
                         />
                     </div>
                     <div id="current-activity">
-                        <h3>Aktuelle Tätigkeit: Student für Medieninformatik und Interaktives Entertainment an der Hochschule Mittweida</h3>
+                        <h3>Aktuelle Tätigkeit: Softwareentwickler bei der&nbsp;
+                            <a href="https://www.sonapro.de/" target="_blank" rel="noopener noreferrer">
+                                <span id='company-name' >SONAPRO Informationssysteme GmbH</span>
+                            </a>
+                        </h3>
                     </div>
                     <p>Ein leidenschaftlicher Programmierer mit Erfahrung in...</p>
                     <div id="knowledge-container-placement">

@@ -241,6 +241,49 @@ footer {
 }
 
 /* ------------------------- */
+/*         Company Name      */
+/* ------------------------- */
+
+#current-activity a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s;
+}
+
+body.dark-mode #current-activity a {
+  color: #90caf9;
+}
+
+body.dark-mode #current-activity a:hover {
+  color: #64b5f6;
+  text-decoration: underline;
+}
+
+/* Light Mode Anpassung */
+body.light-mode #current-activity a {
+  color: #f55945;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color 0.3s, border-bottom 0.3s;
+}
+
+body.light-mode #current-activity a:hover {
+  color: red;
+  border-bottom: 1px solid red;
+}
+
+
+body.custom-mode #current-activity a {
+  color: #ffd700;
+}
+
+body.custom-mode #current-activity a:hover {
+  color: #fffacd;
+  text-decoration: underline;
+}
+
+/* ------------------------- */
 /*     Responsive Design     */
 /* ------------------------- */
 @media (max-width: 900px) {
