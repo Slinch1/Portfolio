@@ -1,0 +1,57 @@
+/* ------------------------- */
+/*      Graduation Card      */
+/* ------------------------- */
+
+.graduation-card {
+    background-color: white;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    max-width: 42rem;
+    margin: 2rem auto;
+    transition: background-color 0.3s, color 0.3s;
+    font-family: 'Fira Code', monospace;
+  }
+  
+  .graduation-card h2,
+  .graduation-card h3 {
+    margin: 0.5rem 0;
+    font-weight: bold;
+  }
+  
+  .graduation-card p {
+    margin: 0.2rem 0;
+  }
+  
+  /* Logo-Styling */
+  .graduation-card .logo {
+    height: 4rem;
+    object-fit: contain;
+    margin-right: 1rem;
+  }
+  
+  /* Flexbox für Hochschule */
+  .graduation-header {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* ------------------------- */
+  /*    Graduation Themes      */
+  /* ------------------------- */
+
+  body.light-mode .graduation-card {
+    background-color: #f8f8f8;
+    color: black;
+  }
+  
+  body.dark-mode .graduation-card {
+    background-color: #312c2c;
+    color: white;
+  }
+  
+  body.custom-mode .graduation-card {
+    background-color: #3c3c8c;
+    color: #fffacd;
+  }
+  

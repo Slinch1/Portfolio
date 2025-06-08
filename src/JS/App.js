@@ -1,6 +1,7 @@
 import '../CSS/App.css';
 import KnowledgeSection from "./Knowledge";
 import Projects from "./Projects";
+import Graduation from "./Graduation";
 import { useBirthdayCounter } from "./Utility";
 import SocialMedia from "./SocialMedia";
 import React, { useState, useEffect } from "react";
@@ -70,6 +71,10 @@ function App() {
                             alt="Profilbild" 
                             loading='lazy' 
                         />
+                    </div>
+
+                    <div id="graduation">
+                        <Graduation />
                     </div>
                     <div id="current-activity">
                         <h3>Aktuelle Tätigkeit: Softwareentwickler bei der&nbsp;

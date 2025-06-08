@@ -9,3 +9,5 @@ export const PlanerLogo = () => <img src={require('../Logos/planer.png')} alt="P
 export const FeedMeLogo = () => <img src={require('../Logos/feedme.png')} alt="Feed Me Logo" className="project-image"/>;
 
 export const ItchioLogo = () => <img src={require('../Logos/itchio.svg').default} alt="Itchio Logo" className="social-link-svg"/>;
+
+export const HSMWLogo = () => <img src={require('../Logos/hsmw.png')} alt="Hochschule Mittweida Logo" className="logo"/>;
