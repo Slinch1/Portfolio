@@ -1,4 +1,4 @@
-import './SocialMedia.css';
+import '../CSS/SocialMedia.css';
 import * as SVGIcons from './Icons';
 import {GithubOriginalIcon, LinkedinPlainIcon} from "react-devicons";
 

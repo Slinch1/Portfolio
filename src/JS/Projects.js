@@ -1,4 +1,4 @@
-import './Projects.css';
+import '../CSS/Projects.css';
 import * as ContentText from './Contenttexts.js'
 import * as Icons from './Icons.js';
 

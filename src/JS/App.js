@@ -1,12 +1,12 @@
-import './App.css';
+import '../CSS/App.css';
 import KnowledgeSection from "./Knowledge";
 import Projects from "./Projects";
 import { useBirthdayCounter } from "./Utility";
 import SocialMedia from "./SocialMedia";
 import React, { useState, useEffect } from "react";
-import ProfilPic256 from "./profile/tp_256.webp";
-import ProfilPic512 from "./profile/tp_512.webp";
-import ProfilPic1024 from "./profile/tp_1024.webp";
+import ProfilPic256 from "../profile/tp_256.webp";
+import ProfilPic512 from "../profile/tp_512.webp";
+import ProfilPic1024 from "../profile/tp_1024.webp";
 
 function App() {
     const counter = useBirthdayCounter();

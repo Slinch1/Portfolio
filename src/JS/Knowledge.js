@@ -1,4 +1,4 @@
-import './Knowledge.css';
+import '../CSS/Knowledge.css';
 import { useState } from 'react';
 import {
     TypescriptOriginalIcon,
