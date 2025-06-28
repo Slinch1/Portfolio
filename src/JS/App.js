@@ -73,9 +73,6 @@ function App() {
                         />
                     </div>
 
-                    <div id="graduation">
-                        <Graduation />
-                    </div>
                     <div id="current-activity">
                         <h3>Aktuelle Tätigkeit: Softwareentwickler bei der&nbsp;
                             <a href="https://www.sonapro.de/" target="_blank" rel="noopener noreferrer">
@@ -87,6 +84,17 @@ function App() {
                     <div id="knowledge-container-placement">
                         <KnowledgeSection theme={theme} />
                     </div>
+                </div>
+            </div>
+
+           
+
+            <div id="projects">
+                <div id="projects-header">
+                    <span>Studium</span>
+                </div>
+                 <div id="graduation">
+                    <Graduation />
                 </div>
             </div>
 

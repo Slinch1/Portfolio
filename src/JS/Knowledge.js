@@ -80,7 +80,7 @@ const KnowledgeSection = ({ theme }) => {
           { logo: <Html5OriginalIcon className="svg-icon" alt="HTML Logo" />, info: "HTML", level: 80 },
           { logo: <Css3OriginalIcon className="svg-icon" alt="CSS Logo" />, info: "CSS", level: 80 },
           { logo: <JavascriptOriginalIcon className="svg-icon" alt="JavaScript Logo" />, info: "JavaScript", level: 70 },
-          { logo: <RubyOriginalIcon className="svg-icon" alt="Ruby Logo" />, info: "Ruby", level: 60 },
+          { logo: <RubyOriginalIcon className="svg-icon" alt="Ruby Logo" />, info: "Ruby", level: 30 },
         ],
       },
       {
@@ -115,7 +115,7 @@ const KnowledgeSection = ({ theme }) => {
           { logo: <GitOriginalIcon className="svg-icon" alt="Git Logo" />, info: "Git", level: 90 },
           { logo: <GithubOriginalIcon className={`filter-${theme} svg-icon`} alt="GitHub Logo" />, info: "GitHub", level: 70 },
           { logo: <JavaOriginalIcon className="svg-icon" alt="Java Logo" />, info: "Java", level: 50 },
-          { logo: <PythonOriginalIcon className="svg-icon" alt="Python Logo" />, info: "Python", level: 30 },
+          { logo: <PythonOriginalIcon className="svg-icon" alt="Python Logo" />, info: "Python", level: 40 },
         ],
       },
     ];

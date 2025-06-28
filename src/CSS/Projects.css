@@ -5,17 +5,20 @@
 .project-entry {
     margin-top: 2rem;
     margin-bottom: 1rem;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
 .project-image {
     height: 20%;
-    width: 20%;
+    width: 23%;
     margin-bottom: 1rem;
 }
 
 .project-image-placeholder {
     height: 20%;
-    width: 20%;
+    width: 23%;
     margin-bottom: 1.2rem;
 }
 
@@ -163,6 +166,12 @@
 /* ------------------------- */
 
 /* Light Theme */
+
+.theme-light .project-entry {
+    background-color: #f8f8f8;
+    color: black;
+}
+
 .theme-light .project-name > span {
     color: darkblue;
 }
@@ -181,6 +190,12 @@
 }
 
 /* Dark Theme */
+
+.theme-dark .project-entry {
+    background-color: #312c2c;
+    color: white;
+}
+
 .theme-dark .project-name > span {
     color: lightblue;
 }

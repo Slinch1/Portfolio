@@ -35,6 +35,11 @@
     display: flex;
     align-items: center;
   }
+
+  .graduation-section {
+    margin-top: 1rem;
+    padding: 1rem;
+  }
   
   /* ------------------------- */
   /*    Graduation Themes      */
